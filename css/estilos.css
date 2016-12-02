@@ -1,0 +1,34 @@
+body{
+  background-color: black;
+}
+#todo{
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+#cabezera{
+  min-height: 40px;
+  background-color: #eeeeee;
+  display: flex;
+  flex-direction: row;
+}
+#titulo{
+  width: 50%;
+  background-color: pink;
+}
+.tit{
+  padding-left: 10%;
+  margin: 3%;
+}
+#enlaces{
+  width: 50%;
+  background-color: red;
+  display: flex;
+  flex-direction: row-reverse;
+}
+#enlaces > article{
+  padding-right: 5%;
+  margin-top: 30%;
+
+}
