@@ -1,5 +1,9 @@
 body{
   background-color: black;
+  font-family: 'Dancing Script', cursive;
+}
+a:link, a:visited{
+  color: white;
 }
 #todo{
   max-width: 900px;
@@ -9,21 +13,26 @@ body{
 }
 #cabezera{
   min-height: 40px;
-  background-color: #eeeeee;
+  background-color: #5b7989;
   display: flex;
   flex-direction: row;
+  border-radius: 10px 10px 0 0;
+  color: white;
+  flex-grow: 1;
 }
 #titulo{
   width: 50%;
-  background-color: pink;
 }
 .tit{
   padding-left: 10%;
   margin: 3%;
+
+}
+.tit h2{
+  text-shadow: 2px 2px black;
 }
 #enlaces{
   width: 50%;
-  background-color: red;
   display: flex;
   flex-direction: row-reverse;
 }
@@ -34,11 +43,11 @@ body{
 #cuerpo{
   display: flex;
   flex-direction: column;
-  background-color: gray;
+  background-color: #d5c75f;
 }
 #imagenPrincipal{
-  width: 90%;
-  background-color: yellow;
+  width: 100%;
+  background-color: #82c3a6;
   margin: 0 auto;
   max-height: 500px;
 }
@@ -46,19 +55,133 @@ body{
   width: 100%;
   display: flex;
   flex-direction: row;
+  background-color: #d5c75f
 }
 .imagenS1{
   width: 50%;
+  color: white;
+  text-decoration: underline;
+  text-align: center;
+}
+.imagenS1 img{
+  box-shadow: 2px 2px 0px #02010a;
 }
 .imagenS2{
   width: 50%;
+  color: white;
+  text-decoration: underline;
+  text-align: center;
+}
+.imagenS2 img{
+  box-shadow: 2px 2px 0px #02010a;
 }
 #pie{
   display: flex;
   flex-direction: row;
-  background-color: gold;
+  background-color: #C6d5c5;
+  border-radius: 0 0 10px 10px;
 }
 #pie > section{
   width: 25%;
   text-align: center;
+}
+#contacto > ul{
+  text-align: left;
+}
+#redesSociales > ul{
+  text-align: left;
+}
+ul{
+  list-style: none;
+}
+
+/*---Paisajes---*/
+
+#central{
+  display: flex;
+  flex-direction: column;
+  background-color: #d5c75f;
+  width: 100%;
+}
+.imagenes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+.imagenes img{
+  margin: 10px;
+  width: 31%;
+}
+.imagen1{
+  -moz-filter: blur(10px);
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+.imagen2, .imagen4, .imagen6{
+  -moz-filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.imagen3{
+  -moz-filter: sepia(90%);
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+
+/*---Celulares---*/
+
+@media (max-width:899px) {
+#cabezera{
+    min-height: 40px;
+    background-color: #5b7989;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 10px 0 0;
+    color: white;
+}
+#titulo{
+  width: 100%;
+}
+#enlaces{
+  width: 70%;
+}
+#imagenesSecundarias{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.imagenS1, .imagenS2{
+  width: 100%;
+}
+#pie{
+  display: flex;
+  flex-direction: column;
+}
+#pie > section{
+  width: 100%;
+  text-align: center;
+}
+#contacto > ul{
+  text-align: center;;
+}
+#redesSociales > ul{
+  text-align: center;
+}
+#central{
+  width: 100%;
+  margin: 0;
+}
+.imagenes{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  width: 90%;
+}
+.imagenes img{
+  margin: 0;
+  margin-top: 10px;
+  width: 100%;
+}
 }

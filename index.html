@@ -5,6 +5,39 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Fotografia</title>
+    <style media="screen">
+      @-moz-keyframes animacionPrincipal{
+        0%{
+          margin-top: 150%;
+        }
+        60%{
+          margin-top: -5%;
+        }
+        100%{
+          margin-top: 0%;
+        }
+      }
+      #todo{
+        animation: animacionPrincipal 1s;
+      }
+      .imagenS1 img{
+        transition-property: transform, box-shadow;
+        transition-duration: 1s, 1s;
+      }
+      .imagenS1 img:hover{
+        transform: rotate(10deg);
+        box-shadow: 2px 2px 0px #82c3a6;
+      }
+      .imagenS2 img{
+        transition-property: transform, box-shadow;
+        transition-duration: 1s, 1s;
+      }
+      .imagenS2 img:hover{
+        transform: translate(20px,-5px);
+        box-shadow: 2px 2px 0px #82c3a6;
+      }
+
+    </style>
 
   </head>
   <body>
@@ -13,7 +46,7 @@
         <section id="cabezera">
           <section id="titulo">
             <article class="tit">
-              Comenzando con la Fotografia
+              <h2>Comenzando con la Fotografia</h2>
             </article>
           </section>
           <section id="enlaces">
@@ -24,7 +57,7 @@
               <a href="paisajes.html">Paisajes</a>
             </article>
             <article class="inicio">
-              <a href="index.html">Inicio</a>
+              <a style="text-decoration:none" href="index.html">Inicio</a>
             </article>
           </section>
         </section>
@@ -32,10 +65,9 @@
 
       <section id="cuerpo">
         <section id="imagenPrincipal">
-          <article class="imagep">
+          <article class="imagenP">
             <figure>
-              <figcaption>Imagen Principal</figcaption>
-              <img src="imagenes/yosemite2.jpg" width="100%">
+              <img src="imagenes/yosemite2.jpg" width="100%" style="box-shadow: 2px 2px 0px #02010a">
             </figure>
           </article>
         </section>
@@ -43,14 +75,15 @@
           <section id="imagenesSecundarias">
             <article class="imagenS1">
               <figure>
-                <figcaption>Imagen Secundaria 1</figcaption>
+
                 <img src="imagenes/paisaje.jpg" width="100%">
+                <figcaption class="piePaisaje">Paisajes</figcaption>
               </figure>
             </article>
             <article class="imagenS2">
               <figure>
-                <figcaption>imagen Secundaria 2</figcaption>
                 <img src="imagenes/retrato.jpg" width="100%">
+                <figcaption class="pieRetratos">Restratos</figcaption>
               </figure>
             </article>
           </section>
@@ -59,17 +92,30 @@
 
       <footer>
         <section id="pie">
-          <section id="contacto" width="25%">
-            Contacto
+          <section id="contacto">
+            <h1>Contacto</h1>
+            <ul>
+              <li>info@fotografia.com</li>
+              <li>Calle 5 con 3</li>
+              <li>Telefono: 123456789</li>
+            </ul>
           </section>
           <section  id="terminos">
-            Terminos
+            <h1>Terminos</h1>
+            <p>Conoce nuestros terminos y condiciones...</p>
           </section>
           <section id="redesSociales">
-            Redes Sociales
+            <h1>Redes Sociales</h1>
+            <p>Compartelo en nuestras redes</p>
+            <ul>
+              <li><img src="imagenes/facebook_2.png" width="7%" margin="2px"> Comenzando Fotografia</li>
+              <li><img src="imagenes/twitter.png" width="8%" margin="4px"> @ComenzandoFotografia</li>
+              <li><img src="imagenes/instagram.png" width="7%" margin="4px"> ComenzandoFotografia</li>
+            </ul>
           </section>
           <section id="derechos">
-            Derechos
+            <h1>Derechos</h1>
+            <p><img src="imagenes/copyright.png" width="7%" margin="4px"> Pablo Mansilla-2016</p>
           </section>
         </section>
       </footer>

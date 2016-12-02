@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Fotografia</title>
+    <style media="screen">
+      @-moz-keyframes animacionPrincipal{
+        0%{
+          margin-top: 150%;
+        }
+        60%{
+          margin-top: -5%;
+        }
+        100%{
+          margin-top: 0%;
+        }
+      }
+      #todo{
+        animation: animacionPrincipal 1s;
+      }
+      .imagenS1 img{
+        transition-property: transform, box-shadow;
+        transition-duration: 1s, 1s;
+      }
+      .imagenS1 img:hover{
+        transform: rotate(10deg);
+        box-shadow: 2px 2px 0px #82c3a6;
+      }
+      .imagenS2 img{
+        transition-property: transform, box-shadow;
+        transition-duration: 1s, 1s;
+      }
+      .imagenS2 img:hover{
+        transform: translate(20px,-5px);
+        box-shadow: 2px 2px 0px #82c3a6;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <section id="todo">
+      <header>
+        <section id="cabezera">
+          <section id="titulo">
+            <article class="tit">
+              <h2>Comenzando con la Fotografia</h2>
+            </article>
+          </section>
+          <section id="enlaces">
+            <article class="retrato">
+              <a style="text-decoration:none" href="retratos.html">Retratos</a>
+            </article>
+            <article class="paisaje">
+              <a href="paisajes.html">Paisajes</a>
+            </article>
+            <article class="inicio">
+              <a href="index.html">Inicio</a>
+            </article>
+          </section>
+        </section>
+      </header>
+
+      <section id="central">
+        <div class="imagenes">
+          <img class="imagen1" src="imagenes/retrato.jpg">
+          <img class="imagen2" src="imagenes/retrato.jpg">
+          <img class="imagen3" src="imagenes/retrato.jpg">
+          <img class="imagen4" src="imagenes/retrato.jpg">
+          <img class="imagen5" src="imagenes/retrato.jpg">
+          <img class="imagen6" src="imagenes/retrato.jpg">
+        </div>
+      </section>
+
+      <footer>
+        <section id="pie">
+          <section id="contacto">
+            <h1>Contacto</h1>
+            <ul>
+              <li>info@fotografia.com</li>
+              <li>Calle 5 con 3</li>
+              <li>Telefono: 123456789</li>
+            </ul>
+          </section>
+          <section  id="terminos">
+            <h1>Terminos</h1>
+            <p>Conoce nuestros terminos y condiciones...</p>
+          </section>
+          <section id="redesSociales">
+            <h1>Redes Sociales</h1>
+            <p>Compartelo en nuestras redes</p>
+            <ul>
+              <li><img src="imagenes/facebook_2.png" width="7%" margin="2px"> Comenzando Fotografia</li>
+              <li><img src="imagenes/twitter.png" width="8%" margin="4px"> @ComenzandoFotografia</li>
+              <li><img src="imagenes/instagram.png" width="7%" margin="4px"> ComenzandoFotografia</li>
+            </ul>
+          </section>
+          <section id="derechos">
+            <h1>Derechos</h1>
+            <p><img src="imagenes/copyright.png" width="7%" margin="4px"> Pablo Mansilla-2016</p>
+          </section>
+        </section>
+      </footer>
+    </section>
+  </body>
+</html>
