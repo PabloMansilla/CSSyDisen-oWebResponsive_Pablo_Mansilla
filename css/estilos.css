@@ -130,7 +130,7 @@ ul{
 }
 
 /*---Celulares---*/
-
+-webkir-@media (max-width:899px) {
 @media (max-width:899px) {
 #cabezera{
     min-height: 40px;
@@ -183,5 +183,6 @@ ul{
   margin: 0;
   margin-top: 10px;
   width: 100%;
+}
 }
 }
